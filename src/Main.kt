@@ -25,12 +25,15 @@ fun main() {
     printWrapped(d, '(')
 }
 
+//Функция для задачи 1
 fun <T> print(value: T) {
     println(value)
 }
 
+//Класс для задачи 2
 data class Person<T>(val name: String, val phone: T)
 
+//Функция для задачи 3
 fun <T> printWrapped(value: T, char: Char) {
     println(when (char) {
         '{', '}' -> "{$value}"
